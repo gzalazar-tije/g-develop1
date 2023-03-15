@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="App">
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
+        <a href="url" target="_blank">
+          <img src="-" className="logo" alt="-" />
         </a>
         <a href="https://www.bocajuniors.com.ar/" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
