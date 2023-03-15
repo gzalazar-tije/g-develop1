@@ -3,3 +3,15 @@ on:
   push:
     branches:
       - main
+      
+      
+env:
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  AWS_DEFAULT_REGION: us-west-2
+  
+  
+  
+steps:
+  - name: Copy files to EC2 instance
+    run: scp -r -i key.pem ./dist ubuntu@ec2-xx-xx-xxx-xxx.us-west-2.compute.amazonaws.com:/home/ubuntu/
